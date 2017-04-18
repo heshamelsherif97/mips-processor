@@ -1,0 +1,25 @@
+module ALU (OUT, ZeroFlag, In1, In2, ALUOP);
+input [31:0] In1, In2;
+input [2:0] ALUOP;
+output [31:0] OUT ;
+reg [31:0] OUT;
+output ZeroFlag;
+reg ZeroFlag;
+always @ (In1 or In2 or ALUOP)
+begin
+if (In1 == In2)
+ZeroFlag = 1;
+else
+ZeroFlag = 0;
+end
+always @ (In1 or In2 or ALUOP)
+begin
+case (ALUOP)
+3'b010 : OUT = In1 + In2;
+3'b110 : OUT = In1 - In2;
+3'b000 : OUT = In1 & In2;
+3'b001 : OUT = In1 | In2;
+3'b111 : OUT = In1 < In2;
+endcase
+end
+endmodule

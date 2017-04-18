@@ -1,0 +1,35 @@
+module MEM_WB_reg(clk, reset, alu_result, memoryread, rd, WB, out1, out2, out2, out3, out4);
+
+input clk, reset;
+input [31:0] alu_result, memoryread;
+input [4:0] rd;
+input [1:0] WB;
+output [31:0] out1, out2;
+reg [31:0] out1, out2;
+output [4:0] out3;
+reg [4:0] out3;
+output [1:0] out4;
+reg [1:0] out4;
+
+
+
+always@(posedge clk or negedge reset)
+begin
+if(reset)
+begin
+out1<=0;
+out2<=0;
+out3<=0;
+out4<=0;
+end
+else
+begin
+out1<=alu_result;
+out2<=memoryread;
+out3<=rd;
+out4<=WB;
+end
+end
+endmodule
+
+

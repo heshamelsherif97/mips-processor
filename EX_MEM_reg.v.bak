@@ -1,0 +1,46 @@
+module EX_MEM_reg(clk, reset, branch_address, alu_result_address, write_to_memory, rd, zeroflag, WB, MEM, out1, out2, out3, out4, out5, out6, out7);
+
+input clk, reset;
+input [31:0] branch_address, alu_result_address, write_to_memory;
+input [4:0] rd;
+input  zeroflag;
+input [1:0] WB;
+input [2:0] MEM;
+output [31:0] out1, out2, out3;
+reg [31:0] out1, out2, out3;
+output [4:0] out4;
+reg [4:0] out4;
+output out5;
+output [1:0] out6;
+output [2:0] out7;
+reg out5;
+reg [1:0] out6;
+reg [2:0] out7;
+
+
+always@(posedge clk or negedge reset)
+begin
+if(reset)
+begin
+out1<=0;
+out2<=0;
+out3<=0;
+out4<=0;
+out5<=0;
+out6<=0;
+out7<=0;
+end
+else
+begin
+out1<=branch_address;
+out2<=alu_result_address;
+out3<=write_to_memory;
+out4<=rd;
+out5<=zeroflag;
+out6<=WB;
+out7<=MEM;
+end
+end
+endmodule
+
+

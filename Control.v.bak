@@ -1,0 +1,3 @@
+module Control(opcode, RegWrite, MemToReg, MemRead, MemWrite, Branch, ALUSrc, RegDest, ALUOp);
+
+endmodule

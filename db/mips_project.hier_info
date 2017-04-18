@@ -1,0 +1,5 @@
+|mips_project
+i1 => out.DATAIN
+out << i1.DB_MAX_OUTPUT_PORT_TYPE
+
+

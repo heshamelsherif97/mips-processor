@@ -1,0 +1,35 @@
+module alu_control(func, ALUOP, aluctl);
+
+input [5:0] func;
+input [1:0] ALUOP;
+
+output [2:0] aluctl;
+reg [2:0] aluctl;
+
+    parameter F_add = 6'd32;
+    parameter F_sub = 6'd34;
+    parameter F_and = 6'd36;
+    parameter F_or  = 6'd37;
+    parameter F_slt = 6'd42;
+
+    parameter ALU_add = 3'b010;
+    parameter ALU_sub = 3'b110;
+    parameter ALU_and = 3'b000;
+    parameter ALU_or  = 3'b001;
+    parameter ALU_slt = 3'b111;
+
+    always @(ALUOP or func)
+    begin
+        case (ALUOP) 
+            2'b00 : aluctl <= ALU_add;
+            2'b01 : aluctl <= ALU_sub;
+            default : case (func) 
+                        F_add : aluctl <= ALU_add;
+                        F_sub : aluctl <= ALU_sub;
+                        F_and : aluctl <= ALU_and;
+                        F_or  : aluctl <= ALU_or;
+                        F_slt : aluctl <= ALU_slt;
+                    endcase
+        endcase
+    end
+endmodule
