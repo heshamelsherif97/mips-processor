@@ -2,7 +2,7 @@ module sign_extender_16to32(inputData, outputData);
   
   input[15:0] inputData;
   output[31:0] outputData;
-  reg [31:0] outputData;
+  reg [31:0] outputData=0;
   
   always@(inputData)
     begin

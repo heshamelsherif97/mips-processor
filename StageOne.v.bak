@@ -1,0 +1,18 @@
+module StageOne(branch,Pc,pcSrc,pc_added,instruction,clk);
+  wire w1,w2,w3;
+  input[31:0] branch;
+  input[31:0] newPc;
+input PCSrs;
+output  reg [31:0]OutputInstruction;
+outout reg [31:0] out;
+
+mux_2x1_32(branch,Pc,pcSrc,w1);
+
+  instruction_memory(w1,w2);
+IF_ID_reg(clk, w2, w3,pc_added , instruction);
+ always @(posedge clk)
+begin
+w3 = w1 + 32'd4;
+end
+endmodule
+    

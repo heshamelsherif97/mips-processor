@@ -1,0 +1,12 @@
+module test_bench();
+
+wire clk;
+
+initial #300 $finish;
+ initial
+  begin
+   repeat (30)
+   #10 clk = ~clk;
+  end
+
+endmodule

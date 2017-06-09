@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at ALU.v(8): always construct contains both blocking and non-blocking assignments File: C:/Users/Hesham/Desktop/yarab/ALU.v Line: 8
+Info (10281): Verilog HDL Declaration information at StageTwo.v(6): object "signExt" differs only in case from object "signext" in the same scope File: C:/Users/Hesham/Desktop/yarab/StageTwo.v Line: 6

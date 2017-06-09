@@ -1,0 +1,46 @@
+VeriLogger Pro simulation log created at Thu Apr 27 19:24:13 2017
+Beginning Compile
+Beginning Phase I
+Compiling source file: C:\Users\Hesham\Desktop\sdsds\test.v
+Compiling source file: C:\Users\Hesham\Desktop\sdsds\StageTwo.v
+Compiling source file: C:\Users\Hesham\Desktop\sdsds\StageThree.v
+Compiling source file: C:\Users\Hesham\Desktop\sdsds\StageOne.v
+Compiling source file: C:\Users\Hesham\Desktop\sdsds\StageFour.v
+Compiling source file: C:\Users\Hesham\Desktop\sdsds\StageFive.v
+Compiling source file: C:\Users\Hesham\Desktop\sdsds\sign_extender_16to32.v
+Compiling source file: C:\Users\Hesham\Desktop\sdsds\shift_left_2.v
+Compiling source file: C:\Users\Hesham\Desktop\sdsds\register_file.v
+Compiling source file: C:\Users\Hesham\Desktop\sdsds\reg32.v
+Compiling source file: C:\Users\Hesham\Desktop\sdsds\pc_4.v
+Compiling source file: C:\Users\Hesham\Desktop\sdsds\mux_2x1_32.v
+Compiling source file: C:\Users\Hesham\Desktop\sdsds\mux_2x1_5.v
+Compiling source file: C:\Users\Hesham\Desktop\sdsds\mips_project.v
+Compiling source file: C:\Users\Hesham\Desktop\sdsds\MEM_WB_reg.v
+Compiling source file: C:\Users\Hesham\Desktop\sdsds\instruction_memory.v
+Compiling source file: C:\Users\Hesham\Desktop\sdsds\IF_ID_reg.v
+Compiling source file: C:\Users\Hesham\Desktop\sdsds\ID_EX_reg.v
+Compiling source file: C:\Users\Hesham\Desktop\sdsds\EX_MEM_reg.v
+Compiling source file: C:\Users\Hesham\Desktop\sdsds\DataMemory.v
+Compiling source file: C:\Users\Hesham\Desktop\sdsds\cpu.v
+Compiling source file: C:\Users\Hesham\Desktop\sdsds\Control.v
+Compiling source file: C:\Users\Hesham\Desktop\sdsds\alu_control.v
+Compiling source file: C:\Users\Hesham\Desktop\sdsds\ALU.v
+Compiling source file: C:\Users\Hesham\Desktop\sdsds\add_32.v
+Finished Phase I
+Entering Phase II...
+C:\Users\Hesham\Desktop\sdsds\StageOne.v: L17: warning: Too many instance ports
+C:\Users\Hesham\Desktop\sdsds\mips_project.v: L35: warning: Too few instance ports
+C:\Users\Hesham\Desktop\sdsds\StageFour.v: L27: warning: Too few instance ports
+Finished Phase II
+Entering Phase III...
+C:\Users\Hesham\Desktop\sdsds\StageOne.v: L17: warning: Port sizes don't match in port #1
+C:\Users\Hesham\Desktop\sdsds\StageTwo.v: L20: warning: Port sizes don't match in port #2
+C:\Users\Hesham\Desktop\sdsds\StageTwo.v: L20: warning: Port sizes don't match in port #3
+C:\Users\Hesham\Desktop\sdsds\StageTwo.v: L20: warning: Port sizes don't match in port #4
+C:\Users\Hesham\Desktop\sdsds\mips_project.v: L33: warning: Port sizes don't match in port #9
+C:\Users\Hesham\Desktop\sdsds\mips_project.v: L35: warning: Port sizes don't match in port #16
+C:\Users\Hesham\Desktop\sdsds\mips_project.v: L35: warning: Port sizes don't match in port #17
+C:\Users\Hesham\Desktop\sdsds\StageFour.v: L27: warning: Port sizes don't match in port #9
+C:\Users\Hesham\Desktop\sdsds\StageFour.v: L27: warning: Port sizes don't match in port #10
+C:\Users\Hesham\Desktop\sdsds\mips_project.v: L37: warning: Port sizes don't match in port #3
+Finished Phase III

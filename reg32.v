@@ -1,21 +1,16 @@
-module reg32(clk, reset, in, out);
+module reg32(clk, in, out);
 
 input [31:0] in;
-input clk, reset;
+input clk;
 
 output [31:0] out;
-reg [31:0] out;
+reg [31:0] out=0;
 
-always@(posedge clk or negedge reset)
-begin
-if(reset)
-begin
-out<=0;
-end
-else
+always@(posedge clk )
+
 begin
 out<=in;
-end
+
 end
 
 endmodule

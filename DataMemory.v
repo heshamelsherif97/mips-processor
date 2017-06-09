@@ -12,6 +12,6 @@ reg [31:0] RAMDATA [RAM_SIZE-1:0];
 assign readdata=(MemRead && (address < RAM_SIZE))? RAMDATA[address] : 32'b0;
 
 always@(posedge clk) begin
-	if(MemWrite && (address < RAM_SIZE)) RAMDATA[address]<=writedata;
+  if(MemWrite && (address < RAM_SIZE)) RAMDATA[address]<=writedata;
 end
 endmodule

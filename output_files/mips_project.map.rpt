@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mips_project
-Wed Apr 19 00:36:19 2017
+Sat Apr 29 22:14:10 2017
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -10,14 +10,8 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
- 12. Analysis & Synthesis Suppressed Messages
+  5. Analysis & Synthesis Messages
+  6. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -44,20 +38,20 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Apr 19 00:36:19 2017       ;
+; Analysis & Synthesis Status        ; Failed - Sat Apr 29 22:14:10 2017           ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; mips_project                                ;
 ; Top-level Entity Name              ; mips_project                                ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 0                                           ;
-;     Total combinational functions  ; 0                                           ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 2                                           ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -158,103 +152,17 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                               ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                 ; Library ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------+---------+
-; mips_project.v                   ; yes             ; User Verilog HDL File  ; C:/Users/Hesham/Desktop/yarab/mips_project.v ;         ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------+---------+
-
-
-+----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary              ;
-+---------------------------------------------+------------+
-; Resource                                    ; Usage      ;
-+---------------------------------------------+------------+
-;                                             ;            ;
-; Total combinational functions               ; 0          ;
-; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 0          ;
-;     -- 3 input functions                    ; 0          ;
-;     -- <=2 input functions                  ; 0          ;
-;                                             ;            ;
-; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 0          ;
-;     -- arithmetic mode                      ; 0          ;
-;                                             ;            ;
-; Total registers                             ; 0          ;
-;     -- Dedicated logic registers            ; 0          ;
-;     -- I/O registers                        ; 0          ;
-;                                             ;            ;
-; I/O pins                                    ; 2          ;
-;                                             ;            ;
-; Embedded Multiplier 9-bit elements          ; 0          ;
-;                                             ;            ;
-; Maximum fan-out node                        ; out~output ;
-; Maximum fan-out                             ; 1          ;
-; Total fan-out                               ; 3          ;
-; Average fan-out                             ; 0.75       ;
-+---------------------------------------------+------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                        ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name  ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+--------------+
-; |mips_project              ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 2    ; 0            ; |mips_project       ; mips_project ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-------------------+---------------------------------+
-; Type              ; Count                           ;
-+-------------------+---------------------------------+
-; boundary_port     ; 2                               ;
-;                   ;                                 ;
-; Max LUT depth     ; 0.00                            ;
-; Average LUT depth ; 0.00                            ;
-+-------------------+---------------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Wed Apr 19 00:36:05 2017
+    Info: Processing started: Sat Apr 29 22:13:54 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mips_project -c mips_project
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file mips_project.v
-    Info (12023): Found entity 1: mips_project File: C:/Users/Hesham/Desktop/yarab/mips_project.v Line: 1
+    Info (12023): Found entity 1: main File: C:/Users/Hesham/Desktop/yarab/mips_project.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file add_32.v
     Info (12023): Found entity 1: add_32 File: C:/Users/Hesham/Desktop/yarab/add_32.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
@@ -285,24 +193,47 @@ Info (12021): Found 1 design units, including 1 entities, in source file control
     Info (12023): Found entity 1: Control File: C:/Users/Hesham/Desktop/yarab/Control.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pc_4.v
     Info (12023): Found entity 1: pc_4 File: C:/Users/Hesham/Desktop/yarab/pc_4.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file cpu.v
-    Info (12023): Found entity 1: cpu File: C:/Users/Hesham/Desktop/yarab/cpu.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file datamemory.v
     Info (12023): Found entity 1: DataMemory File: C:/Users/Hesham/Desktop/yarab/DataMemory.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file instruction_memory.v
     Info (12023): Found entity 1: instruction_memory File: C:/Users/Hesham/Desktop/yarab/instruction_memory.v Line: 1
-Info (12127): Elaborating entity "mips_project" for the top level hierarchy
+Info (12021): Found 1 design units, including 1 entities, in source file stageone.v
+    Info (12023): Found entity 1: StageOne File: C:/Users/Hesham/Desktop/yarab/StageOne.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file stagetwo.v
+    Info (12023): Found entity 1: StageTwo File: C:/Users/Hesham/Desktop/yarab/StageTwo.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file stagethree.v
+    Info (12023): Found entity 1: StageThree File: C:/Users/Hesham/Desktop/yarab/StageThree.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file stagefour.v
+    Info (12023): Found entity 1: StageFour File: C:/Users/Hesham/Desktop/yarab/StageFour.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file stagefive.v
+    Info (12023): Found entity 1: StageFive File: C:/Users/Hesham/Desktop/yarab/StageFive.v Line: 1
+Error (10228): Verilog HDL error at test.v(1): module "add_32" cannot be declared more than once File: C:/Users/Hesham/Desktop/yarab/test.v Line: 1
+Info (10499): HDL info at add_32.v(1): see declaration for object "add_32" File: C:/Users/Hesham/Desktop/yarab/add_32.v Line: 1
+Error (10112): Ignored design unit "ALU" at test.v(8) due to previous errors File: C:/Users/Hesham/Desktop/yarab/test.v Line: 8
+Error (10112): Ignored design unit "alu_control" at test.v(33) due to previous errors File: C:/Users/Hesham/Desktop/yarab/test.v Line: 33
+Error (10112): Ignored design unit "Control" at test.v(82) due to previous errors File: C:/Users/Hesham/Desktop/yarab/test.v Line: 82
+Error (10112): Ignored design unit "DataMemory" at test.v(205) due to previous errors File: C:/Users/Hesham/Desktop/yarab/test.v Line: 205
+Error (10112): Ignored design unit "EX_MEM_reg" at test.v(222) due to previous errors File: C:/Users/Hesham/Desktop/yarab/test.v Line: 222
+Error (10112): Ignored design unit "ID_EX_reg" at test.v(253) due to previous errors File: C:/Users/Hesham/Desktop/yarab/test.v Line: 253
+Error (10112): Ignored design unit "IF_ID_reg" at test.v(295) due to previous errors File: C:/Users/Hesham/Desktop/yarab/test.v Line: 295
+Error (10112): Ignored design unit "MEM_WB_reg" at test.v(309) due to previous errors File: C:/Users/Hesham/Desktop/yarab/test.v Line: 309
+Error (10112): Ignored design unit "mux_2x1_5" at test.v(335) due to previous errors File: C:/Users/Hesham/Desktop/yarab/test.v Line: 335
+Error (10112): Ignored design unit "mux_2x1_32" at test.v(356) due to previous errors File: C:/Users/Hesham/Desktop/yarab/test.v Line: 356
+Error (10112): Ignored design unit "pc_4" at test.v(382) due to previous errors File: C:/Users/Hesham/Desktop/yarab/test.v Line: 382
+Error (10112): Ignored design unit "reg32" at test.v(396) due to previous errors File: C:/Users/Hesham/Desktop/yarab/test.v Line: 396
+Error (10112): Ignored design unit "register_file" at test.v(413) due to previous errors File: C:/Users/Hesham/Desktop/yarab/test.v Line: 413
+Error (10112): Ignored design unit "shift_left_2" at test.v(465) due to previous errors File: C:/Users/Hesham/Desktop/yarab/test.v Line: 465
+Error (10112): Ignored design unit "sign_extender_16to32" at test.v(479) due to previous errors File: C:/Users/Hesham/Desktop/yarab/test.v Line: 479
+Error (10112): Ignored design unit "StageFive" at test.v(493) due to previous errors File: C:/Users/Hesham/Desktop/yarab/test.v Line: 493
+Error (10112): Ignored design unit "StageFour" at test.v(513) due to previous errors File: C:/Users/Hesham/Desktop/yarab/test.v Line: 513
+Error (10112): Ignored design unit "StageOne" at test.v(544) due to previous errors File: C:/Users/Hesham/Desktop/yarab/test.v Line: 544
+Info (12021): Found 0 design units, including 0 entities, in source file test.v
 Info (144001): Generated suppressed messages file C:/Users/Hesham/Desktop/yarab/output_files/mips_project.map.smsg
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 1 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 831 megabytes
-    Info: Processing ended: Wed Apr 19 00:36:19 2017
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:32
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 19 errors, 1 warning
+    Error: Peak virtual memory: 796 megabytes
+    Error: Processing ended: Sat Apr 29 22:14:10 2017
+    Error: Elapsed time: 00:00:16
+    Error: Total CPU time (on all processors): 00:00:38
 
 
 +------------------------------------------+
